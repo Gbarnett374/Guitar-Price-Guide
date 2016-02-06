@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/', to: 'price_guide_search#index'
+  # resouse
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
