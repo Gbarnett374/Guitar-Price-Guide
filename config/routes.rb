@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get '/', to: 'price_guide_search#index'
+  get '/search_price_guides/:query', to: 'price_guide_search#search_price_guides'
+  get '/price_guide_details/:price_guide_id', to: 'price_guide_search#price_guide_details'
+  get '/price_guide_transactions/:price_guide_id', to: 'price_guide_search#price_guide_transactions'
   # resouse
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

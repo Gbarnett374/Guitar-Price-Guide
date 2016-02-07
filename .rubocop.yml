@@ -10,3 +10,8 @@ AllCops:
     - 'config/**/*'
     - 'script/**/*'
     - !ruby/regexp /old_and_unused\.rb$/
+    - bin/**
+    - app/controllers/application_controller.rb
+    - app/helpers/application_helper.rb
+    - Rakefile
+    - spec/spec_helper.rb
