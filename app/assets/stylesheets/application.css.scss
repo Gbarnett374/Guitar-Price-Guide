@@ -20,43 +20,45 @@ $dark: #1e0a29;
 $whiteish: #fafafa;
 
 html, body{
-	height: 	  100%;
-	width:  	  100%;
-	padding: 	  0px;
-	margin:  	  0px;
-	font-family: 'Merriweather', verdana, sans-serif
+	height: 	    100%;
+	width:  	    100%;
+	padding: 	    0px;
+	margin:  	    0px;
+	font-family: 'Merriweather', verdana, sans-serif;
+  overflow:     hidden;
 }
 
 .landing{
-	color: $whiteish;
-	height: 650px;
-  	border-bottom: 1px solid #f1f1f1;
-  	background-image: url("./guitar_amp.jpeg");
-  	background-size: cover;
-  	position: absolute;
-  	width: 100%;
-  	top: 0;
-  	-webkit-filter: blur(2px);
-  	-moz-filter: blur(2px);
-  	-o-filter: blur(2px);
-  	-ms-filter: blur(2px);
-  	filter: blur(2px);
+	color: 			      $whiteish;
+	min-height: 		  100%;
+  border-bottom: 	  1px solid #f1f1f1;
+  background-image: url("./guitar_amp.jpeg");
+  background-size:  cover;
+  position: 		    absolute;
+  width: 			      100%;
+  top: 			        0;
+  -webkit-filter:   blur(1px);
+  -moz-filter:      blur(1px);
+  -o-filter: 		    blur(1px);
+  -ms-filter: 	    blur(1px);
+  filter: 		      blur(1px);
 }
   	
 .landing::before{
-  	content: "";
+  	content:    "";
   	background: rgba(0, 0, 0, 1.5);
-  	opacity: 0.5;
-  	top: 0;
-  	left: 0;
-  	bottom: 0;
-  	right: 0;
-  	position: absolute;
-  	z-index: 1;
+  	opacity:    0.5;
+  	top:        0;
+  	left:       0;
+  	bottom:     0;
+  	right:      0;
+  	position:   absolute;
+  	z-index:    1;
+    min-height: 100%;
 }
 
 .title{
-	position: relative;
+	  position: relative;
     margin: 0 auto;
     width: 60%;
     margin-top: 5%;
@@ -106,8 +108,8 @@ html, body{
     		
 		}
 		input[type='text']:focus{
-			box-shadow: 0 0 5px $dark;
-			outline: $dark;
+			  box-shadow: 0 0 5px $dark;
+			  outline: $dark;
 		}
 }
 			
