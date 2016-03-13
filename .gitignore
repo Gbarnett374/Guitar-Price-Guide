@@ -21,3 +21,6 @@
 
 #coverage
 coverage
+
+#Ignore Rbenv.
+.ruby-version
