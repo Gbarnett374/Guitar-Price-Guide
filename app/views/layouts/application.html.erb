@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Priceguide</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <title>Price Guide</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 </head>
 <body>
+
+<!-- Start header div. -->
+<div class='header'>
+    <p class='logo'>Gearheads</p>
+
+    <nav>
+        <a href='#'>Home</a>
+        <a href='#'>Collections</a>
+        <a href='#'>Contact</a>
+    </nav>
+
+</div>
+<!-- End header div. -->
+
+<!-- Start banner div. -->
+<div class='banner'>
+</div>
+<!-- End banner div. -->
 
 <%= yield %>
 
