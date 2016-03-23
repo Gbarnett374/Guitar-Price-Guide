@@ -1,0 +1,9 @@
+<!-- Loop through JSON returned from price guide query. -->
+<% @price_guides['price_guides'].each do |pg| %>
+	<img src='<%= pg['_links']['photo']['href'] %>' />
+	<p><%= pg['title'] %></p>
+	<p><b>Make:</b> <%= pg['make'] %></p>
+	<p><b>Model:</b> <%= pg['model'] %></p>
+	<p><b>Year:</b> <%= pg['year'] %></p>
+	<small><%= pg['description'] %></small>
+<% end %>

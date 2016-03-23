@@ -56,4 +56,3 @@ group :development do
   gem 'webmock'
   gem 'simplecov'
 end
-

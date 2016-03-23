@@ -1,19 +1,22 @@
-<html>
-<head>
-    <title>Guitar Price Guide</title>
-</head>
-<body>
-
+<div class='banner'>
     <div class='title'>
         <h1>Gear Pricing Guide</h1>
         <p>Search your gear, find out what it's worth.</p>
         <br />
-        <form class='form-inline'>
-            <div class='form-group'>
-                <input type='text' class='form-control' id='gear-query' placeholder='ex: 1994 Fender Stratocaster'>
-                <button type='submit' class='button'>Search</button>
-            </div>
-        </form>
+        
+            <input type='text' class='form-control' id='query' name='query' placeholder='ex: 1994 Fender Stratocaster'>
+            <button class='search-button'>Search</button>
+
+        <!-- End title div. -->
     </div>
+    <!-- End banner div. -->
+</div>
+
+<div class='results'>
+    <!-- If we have results from price guide search query, render price guide results partials
+    else
+    Render default index partial -->
+</div>
+
 </body>
 </html>
