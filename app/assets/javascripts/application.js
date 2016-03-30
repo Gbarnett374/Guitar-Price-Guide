@@ -24,17 +24,16 @@ $(document).on('ready page:load', function(){
 			method: 'GET',
 			url: 'search_price_guides/' + $('#query').val(),
 			success: function(result, status){
-				console.log('Great success!')
 				$('.results').append(result)
 			},
 			error: function(status, error){
 				console.log(status, error)
 			}
-		// End of AJAX call.
+			// End of AJAX call.
 		});
 		// Clear input.
 		$('#query').val('')
-	// End of search-button click function.
+		// End of search-button click function.
 	});
-// End of document ready function/javascript file.
+	// End of document ready function/javascript file.
 });
