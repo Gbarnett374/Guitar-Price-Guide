@@ -28,8 +28,9 @@ html, body{
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
-	font-family: 'Merriweather', verdana, sans-serif;
+	font-family: 'Helvetica Neue', verdana, sans-serif;
 	overflow: auto;
+	overflow-x: hidden;
 	background: $whiteish;
 }
 
@@ -43,13 +44,14 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	width: 100%;
 	color: $dark;
 	padding: 1.25rem;
+	font-family: 'Merriweather', sans-serif;
 		.logo{
 			font-weight: 700;
 			font-size: 1.45rem;
 			text-transform: uppercase;
 			float: left;
 			margin: 0;
-			letter-spacing: 2px;
+			letter-spacing: 4px;
 		}
 		nav{
 			float: right;
@@ -65,7 +67,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 //- - - - - - - - - - Banner Styles - - - - - - - - - -//
 .banner{
 	color: $whiteish;
-	height: 300px;
+	height: 290px;
 	border-bottom: 1px solid #f1f1f1;
 	background-image: url("./guitar_amp.jpeg");
 	background-size: cover;
@@ -91,7 +93,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	position: relative;
     margin: 0 auto;
     width: 60%;
-    margin-top: -0.5%;
+    margin-top: -0.4%;
     padding: 1em 5%;
     text-align: center;
     color: white;
@@ -100,6 +102,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     		text-transform: uppercase;
     		letter-spacing: 5px;
     		font-size: 47px;
+			margin-top: 24px;
     	}
     	p{
     		font-family: 'Merriweather', verdana, serif;
@@ -150,14 +153,24 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     min-height: 100%;
 		.result-card{
 			background: white;
-			width: 27.5%;
+			width: 24.5%;
 			border-radius: 8px;
 			border: 1px solid #DBDBDB;
 			padding: 5px 1%;
 			float: left;
 			font-size: 14.5px;
-			margin-left: 30px;
+			margin-left: 62px;
 			margin-top: 20px;
 			text-align: center;
+			box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+			-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+			-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+				img{
+					height: 200px;
+					border-radius: 4px;
+				}
+				p{
+					font-weight: 300;
+				}
 		}
 }
