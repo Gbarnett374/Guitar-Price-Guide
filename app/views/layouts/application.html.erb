@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Price Guide</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
+  <title>Price Guide</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
 </head>
 <body>
 
 <!-- Start header div. -->
 <div class='header'>
-    <p class='logo'>Gearheads</p>
+  <p class='logo'>Gearheads</p>
 
-    <nav>
-        <a href='#'>Home</a>
-        <a href='#'>About</a>
-        <a href='#'>Contact</a>
-    </nav>
+  <nav>
+    <a href='#'>Home</a>
+    <a href='#'>About</a>
+    <a href='#'>Contact</a>
+  </nav>
 </div>
 <!-- End header div. -->
 
 <%= yield %>
 
-<!-- <div class='footer'>
-    <p><i class="fa fa-copyright"></i>Chuck&Dutch, 2016</p>
-</div> -->
 </body>
 </html>
