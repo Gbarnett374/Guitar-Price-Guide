@@ -1,0 +1,12 @@
+<!-- Loop through JSON returned from price guide query. -->
+<% @price_guides['price_guides'].each do |pg| %>
+	<div class='result-card'>
+		<img src='<%= pg['_links']['photo']['href'] %>' />
+		<p><%= pg['title'] %></p>
+		<p><b>Make:</b> <%= pg['make'] %></p>
+		<p><b>Model:</b> <%= pg['model'] %></p>
+		<p><b>Year:</b> <%= pg['year'] %></p>
+		<p><b>Price Range:</b> $<%= pg['estimated_value']['bottom_price'] %> - $<%= pg['estimated_value']['top_price'] %></p>
+	<!-- End result-card div -->
+	</div>
+<% end %>
