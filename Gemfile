@@ -45,6 +45,10 @@ group :development, :test do
   gem 'guard-rails', require: false
 end
 
+group :test do
+  gem 'webmock'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
@@ -55,6 +59,5 @@ group :development do
   gem 'rubocop'
   gem 'rspec'
   gem 'pry'
-  gem 'webmock'
   gem 'simplecov'
 end
